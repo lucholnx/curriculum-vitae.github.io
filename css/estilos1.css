@@ -1,0 +1,68 @@
+@import url(https://fonts.google.com/specimen/Roboto);
+
+body{
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#cv{
+    text-align: center;
+    font-size: 80px;
+    color: lime;
+}
+
+h2{
+    text-align: center;
+    color: lime;
+}
+
+#foto_perfil{
+    
+    margin-left: 600px;
+    border-radius: 12px;
+}
+
+/*Centrando el boton**/
+.boton1 {
+    text-align: center;
+}
+
+#boton_inicio{
+    background-color: black;
+    cursor: pointer;
+    border: none;
+    padding: 16px 32px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 12px;
+}
+
+#boton_inicio::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, blue, red, deeppink, blue);
+    background-size: 800%;
+    border-radius: 10px;
+    filter:blur(8px);
+    animation: glowing 20s linear infinite;
+
+}
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
